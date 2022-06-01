@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "name": "dinscs",
+      "price": "12",
+      "desc": "",
+      "id": 1
+    },
+    {
+      "name": "ProductA",
+      "price": "12",
+      "desc": "khong duoc xoa",
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "name": "duy",
+      "email": "",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "nguyen van duy",
+      "email": "",
+      "password": "123456",
+      "id": 2
+    }
+  ]
+}
