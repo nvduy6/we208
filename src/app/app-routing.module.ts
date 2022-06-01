@@ -11,26 +11,33 @@ const routes: Routes = [
   // {path:'welcome',component:WelcomeComponent},
   // {path:'product',component:ProductComponent},
   // {path:'product/add',component:ProductAddComponent}
-  
-  {path:'admin',
-component:WelcomeComponent,
-children:[
-  {path:'',
-redirectTo:'product',
-pathMatch:'full',
-},
-{
-  path:"product",
-  children:[
-    {path:'',
-  component:ProductComponent
-},
-{path:'add',
-component:ProductAddComponent
-}
-  ]
-}
-]}
+
+  {
+    path: 'admin',
+    component: WelcomeComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'product',
+        pathMatch: 'full',
+      },
+      {
+        path: "product",
+        children: [
+          {
+            path: '',
+            component: ProductComponent
+          },
+          {
+            path: 'add',
+            component: ProductAddComponent
+          },
+          {path:'edit/:id',
+        component:ProductAddComponent}
+        ]
+      }
+    ]
+  }
 ];
 
 @NgModule({
