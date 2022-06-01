@@ -1,9 +1,9 @@
 {
   "products": [
     {
-      "name": "dinscs",
-      "price": "12",
-      "desc": "",
+      "name": "productA",
+      "price": "12345",
+      "desc": "san pham rat tot",
       "id": 1
     },
     {
@@ -11,6 +11,12 @@
       "price": "12",
       "desc": "khong duoc xoa",
       "id": 2
+    },
+    {
+      "name": "san pham B",
+      "price": "1234",
+      "desc": "san pham moi",
+      "id": 3
     }
   ],
   "users": [

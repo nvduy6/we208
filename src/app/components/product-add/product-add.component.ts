@@ -19,12 +19,12 @@ export class ProductAddComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private productService:ProductsService,
-    private routes:Router,
-    private router:ActivatedRoute
+    private router:Router,
+    private route:ActivatedRoute
     ) { }
 
   ngOnInit(): void {
-    const id = +this.router.snapshot.paramMap.get('id')!;
+    const id = +this.route.snapshot.paramMap.get('id')!;
     if(id){
       this.productService.getProduct(id).subscribe(data=>{
         this.product=data
@@ -37,12 +37,12 @@ export class ProductAddComponent implements OnInit {
     });
   }
   onSubmit(){
-    const id = +this.router.snapshot.paramMap.get('id')!;
+    const id = +this.route.snapshot.paramMap.get('id')!;
     if(id){
       if (this.validateForm.valid) {
         this.productService.updateProduct(this.product).subscribe((data)=>{
           setTimeout(()=>{
-            this.routes.navigate(['welcome'])
+            this.router.navigate(['/admin/product'])
                   },2000)
         })
         // console.log('submit', this.validateForm.value);
@@ -59,7 +59,7 @@ export class ProductAddComponent implements OnInit {
     if (this.validateForm.valid) {
       this.productService.addProduct(this.product).subscribe((data)=>{
         setTimeout(()=>{
-          this.routes.navigate(['welcome'])
+          this.router.navigate(['welcome'])
                 },2000)
       })
       // console.log('submit', this.validateForm.value);
