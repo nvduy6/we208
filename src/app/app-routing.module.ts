@@ -33,14 +33,22 @@ const routes: Routes = [
             path: 'add',
             component: ProductAddComponent
           },
-          {path:'edit/:id',
-        component:ProductAddComponent}
+          {
+            path: 'edit/:id',
+            component: ProductAddComponent
+          }
         ]
       }
     ]
   },
-  {path:'signup',
-component:LogupComponent}
+  {
+    path: 'signup',
+    component: LogupComponent
+  },
+  {
+    path: 'signin',
+    component: LoginComponent
+  }
 ];
 
 @NgModule({
