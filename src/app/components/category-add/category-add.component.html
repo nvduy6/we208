@@ -1,11 +1,17 @@
 <p>category-add works!</p>
 <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
     <nz-form-item>
-        <nz-form-control nzErrorTip="Please input your username!">
+        <nz-form-item>
+            <nz-form-label [nzSpan]="7" nzRequired>Name</nz-form-label>
+            <nz-form-control [nzSpan]="12" nzValidatingTip="Validating...">
+                <input nz-input formControlName="userName" [(ngModel)]="category.name" placeholder="Name category" />
+            </nz-form-control>
+        </nz-form-item>
+        <!-- <nz-form-control nzErrorTip="Please input your username!">
             <nz-input-group nzPrefixIcon="user">
                 <input type="text" nz-input formControlName="userName" [(ngModel)]="category.name" placeholder="Username" />
             </nz-input-group>
-        </nz-form-control>
+        </nz-form-control> -->
     </nz-form-item>
 
     <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Add</button>

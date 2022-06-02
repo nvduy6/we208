@@ -10,6 +10,7 @@ import { ProductAddComponent } from './components/product-add/product-add.compon
 import { LogupComponent } from './components/logup/logup.component';
 import { CategoryComponent } from './components/category/category.component';
 import { CategoryAddComponent } from './components/category-add/category-add.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component'; 
 
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { hi_IN } from 'ng-zorro-antd/i18n';
@@ -99,7 +100,8 @@ registerLocaleData(hi);
     ProductAddComponent,
     LogupComponent,
     CategoryAddComponent,
-    CategoryComponent
+    CategoryComponent,
+    ProductDetailComponent
     
   ],
   imports: [

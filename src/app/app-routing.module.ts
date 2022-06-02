@@ -4,6 +4,7 @@ import { CategoryAddComponent } from './components/category-add/category-add.com
 import { CategoryComponent } from './components/category/category.component';
 import { LogupComponent } from './components/logup/logup.component';
 import { ProductAddComponent } from './components/product-add/product-add.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { ProductComponent } from './components/product/product.component';
 import { LoginComponent } from './login/login.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
@@ -55,6 +56,9 @@ const routes: Routes = [
           {path:'edit/:id',
         component:CategoryAddComponent}
         ]
+      },{
+        path:'product/detail/:id',
+        component:ProductDetailComponent
       }
     ]
   },

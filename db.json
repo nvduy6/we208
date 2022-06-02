@@ -39,5 +39,14 @@
       "id": 3
     }
   ],
-  "Categorys": []
+  "Categorys": [
+    {
+      "name": "Dien thoai",
+      "id": 1
+    },
+    {
+      "name": "Laptop",
+      "id": 2
+    }
+  ]
 }
