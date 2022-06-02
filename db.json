@@ -1,42 +1,48 @@
 {
-    "products": [{
-            "name": "productA-Update",
-            "price": "12345",
-            "desc": "san pham rat tot",
-            "id": 1
-        },
-        {
-            "name": "san pham B",
-            "price": "1234",
-            "desc": "san pham moi",
-            "id": 3
-        },
-        {
-            "name": "Product C",
-            "price": "15673",
-            "desc": "san pham moi",
-            "id": 4
-        }
-    ],
-    "users": [{
-            "name": "duy",
-            "email": "",
-            "password": "1234",
-            "id": 1
-        },
-        {
-            "name": "nguyen van duy",
-            "email": "",
-            "password": "123456",
-            "id": 2
-        },
-        {
-            "name": "duy",
-            "email": "duynvph15542@fpt.edu.vn",
-            "password": "12345",
-            "id": 3
-        }
-
-
-    ]
+  "products": [
+    {
+      "name": "productA-Update",
+      "price": "12345",
+      "desc": "san pham rat tot",
+      "id": 1
+    },
+    {
+      "name": "san pham B",
+      "price": "1234",
+      "desc": "san pham moi",
+      "id": 3
+    },
+    {
+      "name": "Product C",
+      "price": "15673",
+      "desc": "san pham moi",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "name": "duy",
+      "email": "",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "nguyen van duy",
+      "email": "",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "name": "duy",
+      "email": "duynvph15542@fpt.edu.vn",
+      "password": "12345",
+      "id": 3
+    }
+  ],
+  "Categorys": [
+    {
+      "name": "Điện thoại",
+      "id": 1
+    }
+  ]
 }

@@ -1,5 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CategoryAddComponent } from './components/category-add/category-add.component';
+import { CategoryComponent } from './components/category/category.component';
 import { LogupComponent } from './components/logup/logup.component';
 import { ProductAddComponent } from './components/product-add/product-add.component';
 import { ProductComponent } from './components/product/product.component';
@@ -37,6 +39,21 @@ const routes: Routes = [
             path: 'edit/:id',
             component: ProductAddComponent
           }
+        ]
+      },
+      {
+        path:'category',
+        children:[
+          {
+            path:'',
+            component:CategoryComponent
+          },
+          {
+            path:'add',
+            component:CategoryAddComponent
+          },
+          {path:'edit/:id',
+        component:CategoryAddComponent}
         ]
       }
     ]

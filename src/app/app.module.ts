@@ -8,6 +8,8 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductAddComponent } from './components/product-add/product-add.component';
 import { LogupComponent } from './components/logup/logup.component';
+import { CategoryComponent } from './components/category/category.component';
+import { CategoryAddComponent } from './components/category-add/category-add.component';
 
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { hi_IN } from 'ng-zorro-antd/i18n';
@@ -95,7 +97,10 @@ registerLocaleData(hi);
     WelcomeComponent,
     ProductComponent,
     ProductAddComponent,
-    LogupComponent
+    LogupComponent,
+    CategoryAddComponent,
+    CategoryComponent
+    
   ],
   imports: [
     BrowserModule,
