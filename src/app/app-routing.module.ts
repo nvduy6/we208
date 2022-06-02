@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { LogupComponent } from './components/logup/logup.component';
 import { ProductAddComponent } from './components/product-add/product-add.component';
 import { ProductComponent } from './components/product/product.component';
 import { LoginComponent } from './login/login.component';
@@ -37,7 +38,9 @@ const routes: Routes = [
         ]
       }
     ]
-  }
+  },
+  {path:'signup',
+component:LogupComponent}
 ];
 
 @NgModule({

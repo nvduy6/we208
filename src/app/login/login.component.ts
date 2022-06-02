@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
     //   this.validateForm.controls[i].updateValueAndValidity();
     //   this.router.navigate(['/welcome'])
     // }
-    
+
   }
   constructor(
     private fb: FormBuilder,
@@ -41,12 +41,12 @@ export class LoginComponent implements OnInit {
       remember: [true]
     });
   }
-  onSubmit(){
+  onSubmit() {
     if (this.validateForm.valid) {
-      this.userService.addUser(this.user).subscribe((data)=>{
-        setTimeout(()=>{
-  this.routes.navigate([''])
-        },2000)
+      this.userService.signIn(this.user).subscribe((data) => {
+        setTimeout(() => {
+          this.routes.navigate([''])
+        }, 2000)
       })
       // console.log('submit', this.validateForm.value);
     } else {
@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit {
         }
       });
     }
-    
+
   }
 
 }

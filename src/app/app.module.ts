@@ -7,7 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductAddComponent } from './components/product-add/product-add.component';
-
+import { LogupComponent } from './components/logup/logup.component';
 
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { hi_IN } from 'ng-zorro-antd/i18n';
@@ -94,7 +94,8 @@ registerLocaleData(hi);
     LoginComponent,
     WelcomeComponent,
     ProductComponent,
-    ProductAddComponent
+    ProductAddComponent,
+    LogupComponent
   ],
   imports: [
     BrowserModule,
