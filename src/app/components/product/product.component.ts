@@ -21,5 +21,14 @@ ShowProducts(){
   this.productService.getProducts().subscribe(data=>{
     this.productList=data
   })
+  
+}
+onRemoveItem(id:number){
+  const confirm = window.confirm('ban co muon xoa khong');
+  if(confirm){
+    this.productService.removeProduct(id).subscribe(()=>{
+      this.productList=this.productList.filter(item=>item.id!==id);
+    })
+  }
 }
 }

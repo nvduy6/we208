@@ -17,9 +17,9 @@
             <td>{{product.price}}</td>
             <td>{{product.desc}}</td>
             <td>
-                <a href=""></a>
+                <button nz-button nzType="primary" (click)="onRemoveItem(product.id!)">Delete</button>
                 <nz-divider nzType="vertical"></nz-divider>
-                <a>Delete</a>
+                <a href="admin/product/edit/{{product.id}}">update</a>
             </td>
         </tr>
     </tbody>

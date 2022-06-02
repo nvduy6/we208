@@ -1,22 +1,22 @@
 {
   "products": [
     {
-      "name": "productA",
+      "name": "productA-Update",
       "price": "12345",
       "desc": "san pham rat tot",
       "id": 1
-    },
-    {
-      "name": "ProductA",
-      "price": "12",
-      "desc": "khong duoc xoa",
-      "id": 2
     },
     {
       "name": "san pham B",
       "price": "1234",
       "desc": "san pham moi",
       "id": 3
+    },
+    {
+      "name": "Product C",
+      "price": "15673",
+      "desc": "san pham moi",
+      "id": 4
     }
   ],
   "users": [
