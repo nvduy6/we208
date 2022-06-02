@@ -11,11 +11,13 @@ export class CategoryComponent implements OnInit {
 categoryList!:IPcate[];
   constructor(
     private categoryService:CategoryService
-  ) { }
+  ) { 
+    this.ShowCategorys();
+  }
 
   ngOnInit(): void {
   }
-  ShowCategory(){
+  ShowCategorys(){
     this.categoryService.getCates().subscribe(data=>{
       this.categoryList=data;
     })
