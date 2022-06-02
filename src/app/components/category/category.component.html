@@ -1,1 +1,22 @@
 <p>category works!</p>
+<nz-table #basicTable>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let category of categoryList;let i = index">
+
+            <td>{{i+1}}</td>
+            <td>{{category.name}}</td>
+            <td>
+                <button nz-button nzType="primary" (click)="onRemoveItem(category.id!)">Delete</button>
+                <nz-divider nzType="vertical"></nz-divider>
+                <a href="admin/category/edit/{{product.id}}">update</a>
+            </td>
+        </tr>
+    </tbody>
+</nz-table>
