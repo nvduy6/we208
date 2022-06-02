@@ -12,7 +12,7 @@ export class UserService {
   API_URL:string='http://localhost:3000/users';
   constructor(private http:HttpClient) { }
   signIn(user:Iuser):Observable<Iuser>{
-    return this.http.post<Iuser>(this.API_URL,user)
+    return this.http.post<Iuser>('http://localhost:3000/signin',user)
   }
   signUp(user:Iuser):Observable<Iuser>{
     return this.http.post<Iuser>(this.API_URL,user)

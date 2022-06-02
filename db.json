@@ -21,22 +21,10 @@
   ],
   "users": [
     {
-      "name": "duy",
-      "email": "",
-      "password": "1234",
-      "id": 1
-    },
-    {
-      "name": "nguyen van duy",
-      "email": "",
-      "password": "123456",
-      "id": 2
-    },
-    {
-      "name": "duy",
       "email": "duynvph15542@fpt.edu.vn",
-      "password": "12345",
-      "id": 3
+      "password": "$2a$10$qu4seWpaypxJBp1RkRt6vu5jfnC8pHRKqwrlaY5WbThCGx6PaVOZW",
+      "name": "duy",
+      "id": 1
     }
   ],
   "Categorys": [
