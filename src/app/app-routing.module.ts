@@ -5,8 +5,10 @@ import { CategoryComponent } from './components/category/category.component';
 import { LogupComponent } from './components/logup/logup.component';
 import { ProductAddComponent } from './components/product-add/product-add.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductComponent } from './components/product/product.component';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './pages/home/home.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 
 const routes: Routes = [
@@ -62,6 +64,14 @@ const routes: Routes = [
       }
     ]
   },
+  {path:'',
+component:HomeComponent,
+children:[
+  {
+    path:'',
+    component:ProductListComponent
+  }
+]},
   {
     path: 'signup',
     component: LogupComponent

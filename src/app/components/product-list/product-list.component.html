@@ -1,0 +1,62 @@
+<nz-layout>
+    <nz-sider>
+        <ul nz-menu nzMode="inline">
+            <li nz-submenu nzTitle="Navigation One" nzIcon="mail" nzOpen>
+                <ul>
+                    <li nz-menu-group nzTitle="Item 1">
+                        <ul>
+                            <li nz-menu-item nzSelected>Option 1</li>
+                            <li nz-menu-item>Option 2</li>
+                        </ul>
+                    </li>
+                    <li nz-menu-group nzTitle="Item 2">
+                        <ul>
+                            <li nz-menu-item>Option 3</li>
+                            <li nz-menu-item>Option 4</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li nz-submenu nzTitle="Navigation Two" nzIcon="appstore">
+                <ul>
+                    <li nz-menu-item>Option 5</li>
+                    <li nz-menu-item>Option 6</li>
+                    <li nz-submenu nzTitle="Submenu">
+                        <ul>
+                            <li nz-menu-item>Option 7</li>
+                            <li nz-menu-item>Option 8</li>
+                            <li nz-submenu nzTitle="Submenu">
+                                <ul>
+                                    <li nz-menu-item>Option 9</li>
+                                    <li nz-menu-item>Option 10</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li nz-submenu nzTitle="Navigation Three" nzIcon="setting">
+                <ul>
+                    <li nz-menu-item>Option 11</li>
+                    <li nz-menu-item>Option 12</li>
+                    <li nz-menu-item>Option 13</li>
+                </ul>
+            </li>
+        </ul>
+    </nz-sider>
+    <nz-content>
+        <nz-breadcrumb>
+            <nz-breadcrumb-item>Home</nz-breadcrumb-item>
+            <nz-breadcrumb-item>List</nz-breadcrumb-item>
+            <nz-breadcrumb-item>App</nz-breadcrumb-item>
+        </nz-breadcrumb>
+        <div nz-row>
+            <div nz-col nzSpan="6" *ngFor="let product of productList;let i=index">
+                <img width="80px" src="https://img4.thuthuatphanmem.vn/uploads/2020/01/05/hinh-nen-2k-cho-dien-thoai-android_020632314.jpg" alt="">
+                <h3>{{product.name}}</h3>
+                <p>Gia: {{product.price}} VND</p>
+            </div>
+
+        </div>
+    </nz-content>
+</nz-layout>

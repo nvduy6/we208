@@ -1,0 +1,23 @@
+<nz-layout>
+    <nz-header>
+        <div class="logo" style="background-color: red;">
+            <!-- <img style="width:50px ;height: 40px;" src="https://cdn.dribbble.com/users/24078/screenshots/15522433/media/e92e58ec9d338a234945ae3d3ffd5be3.jpg?compress=1&resize=400x300" alt=""> -->
+        </div>
+        <ul nz-menu nzTheme="dark" nzMode="horizontal">
+            <li nz-menu-item>nav 1</li>
+            <li nz-menu-item>nav 2</li>
+            <li nz-menu-item>nav 3</li>
+        </ul>
+    </nz-header>
+    <nz-carousel nzAutoPlay>
+        <div nz-carousel-content *ngFor="let index of array">
+            <img style="width: full;" src="{{ index }}" alt="">
+
+        </div>
+    </nz-carousel>
+    <nz-content>
+        <router-outlet></router-outlet>
+
+    </nz-content>
+    <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
+</nz-layout>
